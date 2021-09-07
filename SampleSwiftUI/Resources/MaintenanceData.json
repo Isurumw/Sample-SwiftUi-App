@@ -1,0 +1,346 @@
+{
+  "data": {
+    "properties": [
+      {
+        "maintenances": [
+          {
+            "id": "5cd7744075ef967e927b1480",
+            "status": "CLOSED",
+            "area": {
+              "code": "BATHROOM",
+              "name": "Bathroom"
+            },
+            "problem": {
+              "code": "ELECTRICAL_ISSUE",
+              "name": "Electrical Issue",
+              "assets": [
+                {
+                  "value": "https://s3.amazonaws.com/different-app/Mobile/icons/ic_electrical.png"
+                },
+                {
+                  "value": "https://s3.amazonaws.com/different-app/Mobile/ios_icons/electrical_issue_icon%403x.png"
+                }
+              ]
+            },
+            "createdAt": "2019-05-12T01:17:52.741Z",
+            "log": [
+              {
+                "status": "OPEN",
+                "date": "2019-05-12T01:17:52.741Z"
+              },
+              {
+                "status": "WAITING",
+                "date": "2019-05-12T01:18:58.331Z"
+              },
+              {
+                "status": "APPROVED",
+                "date": "2019-05-12T01:19:59.778Z"
+              },
+              {
+                "status": "CLOSED",
+                "date": "2020-01-22T22:58:13.210Z"
+              }
+            ],
+            "details": "There is a cat guarding the stairs and I can’t get out. \n",
+            "attachments": [
+              "https://different-app.s3.amazonaws.com/TenantAPI%2Fqa%2Fmaintenance%2Frequest%2Fimages%2Fc23c9a90-7453-11e9-87b7-4dd8285661e1-IMG_1.jpg"
+            ]
+          },
+          {
+            "id": "5ceb70d207bda1118ac6eceb",
+            "status": "CLOSED",
+            "area": {
+              "code": "BATHROOM",
+              "name": "Bathroom"
+            },
+            "problem": {
+              "code": "MOULD",
+              "name": "Mould",
+              "assets": [
+                {
+                  "value": "https://s3.amazonaws.com/different-app/Mobile/icons/ic_mould.png"
+                },
+                {
+                  "value": "https://s3.amazonaws.com/different-app/Mobile/ios_icons/mould_icon%403x.png"
+                }
+              ]
+            },
+            "createdAt": "2019-05-27T05:08:34.748Z",
+            "log": [
+              {
+                "status": "OPEN",
+                "date": "2019-05-27T05:08:34.748Z"
+              },
+              {
+                "status": "WAITING",
+                "date": "2019-05-27T05:26:16.008Z"
+              },
+              {
+                "status": "APPROVED",
+                "date": "2019-05-27T06:30:10.158Z"
+              },
+              {
+                "status": "ASSIGNED",
+                "date": "2020-03-13T02:07:48.412Z"
+              },
+              {
+                "status": "CLOSED",
+                "date": "2020-03-13T02:08:02.210Z"
+              }
+            ],
+            "details": "Mould has been building up in a specific corner, we’ve cleaned it twice but keeps coming back.",
+            "attachments": [
+              "https://different-app.s3.amazonaws.com/TenantAPI%2Fqa%2Fmaintenance%2Frequest%2Fimages%2F78c29810-803d-11e9-8f4e-578ca29c222b-IMG_1.jpg"
+            ]
+          },
+          {
+            "id": "5d195a09c15796175781bd8f",
+            "status": "CLOSED",
+            "area": {
+              "code": "DININGROOM",
+              "name": "Dining room"
+            },
+            "problem": {
+              "code": "BROKEN_WINDOWS",
+              "name": "Broken Windows",
+              "assets": [
+                {
+                  "value": "https://s3.amazonaws.com/different-app/Mobile/icons/ic_broken_windows.png"
+                },
+                {
+                  "value": "https://s3.amazonaws.com/different-app/Mobile/ios_icons/broken_windows%403x.png"
+                }
+              ]
+            },
+            "createdAt": "2019-07-01T00:55:37.388Z",
+            "log": [
+              {
+                "status": "OPEN",
+                "date": "2019-07-01T00:55:37.388Z"
+              },
+              {
+                "status": "WAITING",
+                "date": "2019-07-01T00:59:26.679Z"
+              },
+              {
+                "status": "APPROVED",
+                "date": "2019-07-03T03:19:42.487Z"
+              },
+              {
+                "status": "ASSIGNED",
+                "date": "2019-08-21T06:07:50.736Z"
+              },
+              {
+                "status": "CLOSED",
+                "date": "2019-11-28T01:31:10.794Z"
+              }
+            ],
+            "details": "Text djdjdjsha Kansas jdjdjd",
+            "attachments": [
+              "https://different-app.s3.amazonaws.com/TenantAPI%2Fqa%2Fmaintenance%2Frequest%2Fimages%2Fef7609b0-9b9a-11e9-bc92-1919ff10b7e8-IMG_1.jpg"
+            ]
+          },
+          {
+            "id": "5ddf1c5eeaedad17e501c234",
+            "status": "CLOSED",
+            "area": {
+              "code": "PARKING",
+              "name": "Garage / Parking"
+            },
+            "problem": {
+              "code": "GARAGE_DOOR_BROKEN",
+              "name": "Garage door broken",
+              "assets": [
+                {
+                  "value": "https://s3.amazonaws.com/different-app/Mobile/icons/ic_garden_door_broken.png"
+                },
+                {
+                  "value": "https://s3.amazonaws.com/different-app/Mobile/ios_icons/garage_door_broken%403x.png"
+                }
+              ]
+            },
+            "createdAt": "2019-11-28T01:01:18.347Z",
+            "log": [
+              {
+                "status": "WAITING",
+                "date": "2019-11-28T01:01:18.347Z"
+              },
+              {
+                "status": "APPROVED",
+                "date": "2019-11-28T05:10:20.763Z"
+              },
+              {
+                "status": "DENIED",
+                "date": "2019-11-28T05:13:10.809Z"
+              },
+              {
+                "status": "CLOSED",
+                "date": "2019-11-28T05:13:10.809Z"
+              }
+            ],
+            "details": "I can't get my car out. HELP!",
+            "attachments": [
+              "https://different-app.s3.amazonaws.com/TenantAPI/qa/maintenance/request/images/12ed2d6a-86d3-4f12-9a27-20dde3237e56-2010.jpg"
+            ]
+          },
+          {
+            "id": "5ddf57d2eaedad17e501c235",
+            "status": "CLOSED",
+            "area": {
+              "code": "BATHROOM",
+              "name": "Bathroom"
+            },
+            "problem": {
+              "code": "BLOCKED_TOILET",
+              "name": "Blocked Toilet",
+              "assets": [
+                {
+                  "value": "https://s3.amazonaws.com/different-app/Mobile/icons/ic_block_toilet.png"
+                },
+                {
+                  "value": "https://s3.amazonaws.com/different-app/Mobile/ios_icons/blocked_toilet_icon%403x.png"
+                }
+              ]
+            },
+            "createdAt": "2019-11-28T05:14:58.616Z",
+            "log": [
+              {
+                "status": "WAITING",
+                "date": "2019-11-28T05:14:58.616Z"
+              },
+              {
+                "status": "APPROVED",
+                "date": "2019-11-28T05:15:47.649Z"
+              },
+              {
+                "status": "CLOSED",
+                "date": "2019-12-03T16:48:22.176Z"
+              }
+            ],
+            "details": "tetdfsgdfhdfgjdfgjfghjfghj",
+            "attachments": [
+              "https://different-app.s3.amazonaws.com/TenantAPI/qa/maintenance/request/images/9ca3f727-afc3-464f-9c24-601ec9bb30f0-julie_crockett.png"
+            ]
+          },
+          {
+            "id": "5ddf5920eaedad17e501c236",
+            "status": "CLOSED",
+            "area": {
+              "code": "BEDROOM",
+              "name": "Bedroom"
+            },
+            "problem": {
+              "code": "BROKEN_WINDOWS",
+              "name": "Broken Windows",
+              "assets": [
+                {
+                  "value": "https://s3.amazonaws.com/different-app/Mobile/icons/ic_broken_windows.png"
+                },
+                {
+                  "value": "https://s3.amazonaws.com/different-app/Mobile/ios_icons/broken_windows%403x.png"
+                }
+              ]
+            },
+            "createdAt": "2019-11-28T05:20:32.933Z",
+            "log": [
+              {
+                "status": "WAITING",
+                "date": "2019-11-28T05:20:32.933Z"
+              },
+              {
+                "status": "APPROVED",
+                "date": "2019-11-29T22:08:21.255Z"
+              },
+              {
+                "status": "CLOSED",
+                "date": "2019-12-03T16:48:20.095Z"
+              }
+            ],
+            "details": "rbergfsegsdgsdfgsdfhdsfhdsfhdfsh",
+            "attachments": [
+              "https://different-app.s3.amazonaws.com/TenantAPI/qa/maintenance/request/images/234551a3-e1c5-4ec3-a32d-f103ee743ad8-image%20%2810%29.png"
+            ]
+          },
+          {
+            "id": "5de691bbfe7288386f442afa",
+            "status": "CLOSED",
+            "area": {
+              "code": "PARKING",
+              "name": "Garage / Parking"
+            },
+            "problem": {
+              "code": "GARAGE_DOOR_BROKEN",
+              "name": "Garage door broken",
+              "assets": [
+                {
+                  "value": "https://s3.amazonaws.com/different-app/Mobile/icons/ic_garden_door_broken.png"
+                },
+                {
+                  "value": "https://s3.amazonaws.com/different-app/Mobile/ios_icons/garage_door_broken%403x.png"
+                }
+              ]
+            },
+            "createdAt": "2019-12-03T16:47:55.467Z",
+            "log": [
+              {
+                "status": "WAITING",
+                "date": "2019-12-03T16:47:55.467Z"
+              },
+              {
+                "status": "APPROVED",
+                "date": "2019-12-05T06:55:37.068Z"
+              },
+              {
+                "status": "CLOSED",
+                "date": "2020-01-22T22:58:11.467Z"
+              }
+            ],
+            "details": "Not sure what happened to it...",
+            "attachments": [
+              "https://different-app.s3.amazonaws.com/TenantAPI/qa/maintenance/request/images/098081f3-0b46-43fe-92fb-8fe747d6c0ec-garage%20door.jpeg"
+            ]
+          },
+          {
+            "id": "5dedf2da4679136501747786",
+            "status": "CLOSED",
+            "area": {
+              "code": "KITCHEN",
+              "name": "Kitchen"
+            },
+            "problem": {
+              "code": "LEAKY_OR_DRIPPING_TAPS",
+              "name": "Leaking or Dripping Taps",
+              "assets": [
+                {
+                  "value": "https://s3.amazonaws.com/different-app/Mobile/icons/ic_leak_tap.png"
+                },
+                {
+                  "value": "https://s3.amazonaws.com/different-app/Mobile/ios_icons/leaky_or_dripping_taps_icon%403x.png"
+                }
+              ]
+            },
+            "createdAt": "2019-12-09T07:08:10.711Z",
+            "log": [
+              {
+                "status": "WAITING",
+                "date": "2019-12-09T07:08:10.711Z"
+              },
+              {
+                "status": "APPROVED",
+                "date": "2019-12-11T06:08:58.030Z"
+              },
+              {
+                "status": "CLOSED",
+                "date": "2020-01-22T22:58:08.942Z"
+              }
+            ],
+            "details": "it's spraying all over the place. can still use it but really annoying and constantly need to clean things up",
+            "attachments": [
+              "https://different-app.s3.amazonaws.com/TenantAPI/qa/maintenance/request/images/db4e0dc2-0278-4848-aade-4e58c7cb409c-ebd14287fabbf57a611471d893b5b94a.jpg"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

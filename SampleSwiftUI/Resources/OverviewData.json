@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1001,
+        "title": "Advanced app experiences and tools",
+        "description": "Enhance your apps with new features, such as improved list views, better search experiences, and support for control focus areas.",
+        "imageName": "Card_01"
+    },
+    {
+        "id": 1002,
+        "title": "Accessibility improvements",
+        "description": "Speed up interactions by exposing the most relevant items on a screen in a simple list using the new Rotor API.",
+        "imageName": "Card_02"
+    },
+    {
+        "id": 1003,
+        "title": "SwiftUI improvements on macOS",
+        "description": "New performance and API availability improvements, including support for multicolumn tables, make your macOS apps even better.",
+        "imageName": "Card_03"
+    },
+    {
+        "id": 1004,
+        "title": "Always-On Retina Display support",
+        "description": "On Apple Watch Series 5 and later, the Always-On Retina Display allows watchOS apps to stay visible.",
+        "imageName": "Card_04"
+    },
+]
+
