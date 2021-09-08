@@ -2,7 +2,7 @@
 //  Extensions.swift
 //  SampleSwiftUI
 //
-//  Created by Aravindi on 2021-09-01.
+//  Created by Isuru Madusanka on 2021-09-01.
 //
 
 import SwiftUI
@@ -15,6 +15,7 @@ extension Color {
     static let Grape40 = Color("Grape40")
     static let Background = Color("Background")
     static let Marble = Color("Marble")
+    static let Aluminum = Color("Aluminum")
 }
 
 extension Font {
@@ -53,7 +54,7 @@ extension String {
 
 enum DateFormat: String {
     case format01 = "DD MMM YYYY"
-    case format02 = "DD MMM YYYY h:mm A"
+    case format02 = "DD MMM YYYY h:mm a"
 }
 
 extension Date {

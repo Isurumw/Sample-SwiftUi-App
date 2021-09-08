@@ -2,7 +2,7 @@
 //  Record.swift
 //  SampleSwiftUI
 //
-//  Created by Aravindi on 2021-09-03.
+//  Created by Isuru Madusanka on 2021-09-03.
 //
 
 import SwiftUI

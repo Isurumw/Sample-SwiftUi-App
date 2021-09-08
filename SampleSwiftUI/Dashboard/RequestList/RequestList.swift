@@ -2,7 +2,7 @@
 //  Maintenance.swift
 //  SampleSwiftUI
 //
-//  Created by Aravindi on 2021-09-02.
+//  Created by Isuru Madusanka on 2021-09-02.
 //
 
 import SwiftUI
@@ -15,10 +15,7 @@ struct RequestList: View {
             List {
                 ForEach(viewModel.requests) { request in
                     NavigationLink(
-                        destination: ViewRequest()
-                            .environmentObject(
-                                ViewRequestViewModel(request: request)
-                            )
+                        destination: ViewRequest(request: request)
                     ) {
                         Record(
                             imageUrl: request.problem.asset,

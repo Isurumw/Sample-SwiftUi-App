@@ -2,7 +2,7 @@
 //  Property.swift
 //  SampleSwiftUI
 //
-//  Created by Aravindi on 2021-09-04.
+//  Created by Isuru Madusanka on 2021-09-04.
 //
 
 import Foundation

@@ -2,19 +2,18 @@
 //  CustomButton.swift
 //  SampleSwiftUI
 //
-//  Created by Aravindi on 2021-09-02.
+//  Created by Isuru Madusanka on 2021-09-02.
 //
 
 import SwiftUI
 
 struct CustomButton: View {
-    @Binding var isSet: Bool
+//    @Binding var isSet: Bool
     var label: String
+    var action: () -> Void
     
     var body: some View {
-        Button(action: {
-            isSet.toggle()
-        }, label: {
+        Button(action: action, label: {
             HStack {
                 Spacer()
                 Text(label)
@@ -35,7 +34,7 @@ struct CustomButton: View {
 
 struct CustomButton_Previews: PreviewProvider {
     static var previews: some View {
-        CustomButton(isSet: .constant(false), label: "LABEL")
+        CustomButton(label: "LABEL", action: {})
             .previewLayout(.fixed(width: 300, height: 60))
     }
 }

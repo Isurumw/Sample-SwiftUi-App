@@ -9,42 +9,30 @@ import SwiftUI
 
 struct ViewRequest: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    @EnvironmentObject var viewModel: ViewRequestViewModel
+    var request: MaintenanceRequest
     
     var body: some View {
         Form {
             VStack(alignment: .leading, spacing: 10) {
-                Text("Reported on \(viewModel.request.reportedAt.formattedDate(.format02))")
+                Text("Reported on \(request.reportedAt.formattedDate(.format02))")
                     .font(.Subtext)
                     .foregroundColor(.Pewter)
-                Text("\(viewModel.request.area.name) - \(viewModel.request.problem.name)")
+                Text("\(request.area.name) - \(request.problem.name)")
                     .font(.H4)
                     .foregroundColor(.Satin)
-                if let details = viewModel.request.details {
+                if let details = request.details {
                     Text(details)
                         .font(.Body)
                         .foregroundColor(.Satin)
                 }
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack {
-                        ForEach(viewModel.request.attachments, id: \.self) { attachment in
-                            URLImage(
-                                url: URL(string: attachment),
-                                placeholder: ActivityIndicator(
-                                    isAnimating: .constant(true),
-                                    style: .medium,
-                                    color: .white
-                                ),
-                                width: viewModel.imageSize,
-                                height: viewModel.imageSize
-                            )
-                            .frame(width: viewModel.imageSize, height: viewModel.imageSize)
-                            .background(Color.Marble)
-                            .cornerRadius(8.0)
-                        }
-                    }
-                }
+                Media(
+                    size: 80.0,
+                    attachments: request.attachments
+                )
             }
+            .padding(.bottom, 10)
+            Timeline(logs: request.log)
+                .padding([.top, .bottom], 10)
         }
         .navigationTitle("Maintenance")
         .navigationBarTitleDisplayMode(.inline)
@@ -57,11 +45,6 @@ struct ViewRequest: View {
 
 struct ViewRequest_Previews: PreviewProvider {
     static var previews: some View {
-        ViewRequest()
-            .environmentObject(
-                ViewRequestViewModel(
-                    request: MaintenanceRequest.mockObj
-                )
-            )
+        ViewRequest(request: MaintenanceRequest.mockObj)
     }
 }

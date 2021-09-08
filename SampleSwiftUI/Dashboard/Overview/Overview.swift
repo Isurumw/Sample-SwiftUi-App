@@ -2,7 +2,7 @@
 //  Overview.swift
 //  SampleSwiftUI
 //
-//  Created by Aravindi on 2021-09-02.
+//  Created by Isuru Madusanka on 2021-09-02.
 //
 
 import SwiftUI

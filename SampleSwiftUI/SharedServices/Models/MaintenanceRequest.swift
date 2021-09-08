@@ -2,7 +2,7 @@
 //  MaintenanceRequest.swift
 //  SampleSwiftUI
 //
-//  Created by Aravindi on 2021-09-04.
+//  Created by Isuru Madusanka on 2021-09-04.
 //
 
 import Foundation
@@ -30,24 +30,7 @@ struct MaintenanceRequest: Codable, Identifiable {
                 name: "Bathroom"
             ),
             problem: Problem.mockProblem,
-            log: [
-                Log(
-                    status: "OPEN",
-                    date: "2019-05-12T01:17:52.741Z"
-                ),
-                Log(
-                    status: "WAITING",
-                    date: "2019-05-12T01:18:58.331Z"
-                ),
-                Log(
-                    status: "APPROVED",
-                    date: "2019-05-12T01:19:59.778Z"
-                ),
-                Log(
-                    status: "CLOSED",
-                    date: "2020-01-22T22:58:13.210Z"
-                )
-            ],
+            log: Log.mockLogs,
             details: "Mould has been building up in a specific corner, we’ve cleaned it twice but keeps coming back.",
             attachments: [
                 "https://different-app.s3.amazonaws.com/TenantAPI%2Fqa%2Fmaintenance%2Frequest%2Fimages%2Fc23c9a90-7453-11e9-87b7-4dd8285661e1-IMG_1.jpg",

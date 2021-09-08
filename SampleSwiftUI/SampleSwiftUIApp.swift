@@ -2,13 +2,14 @@
 //  SampleSwiftUIApp.swift
 //  SampleSwiftUI
 //
-//  Created by Aravindi on 2021-09-01.
+//  Created by Isuru Madusanka on 2021-09-01.
 //
 
 import SwiftUI
 
 @main
 struct SampleSwiftUIApp: App {
+    @ObservedObject var viewModel = BaseViewModel()
     
     init() {
         UINavigationBar.appearance().largeTitleTextAttributes = navLargeTitleTextAttributes
@@ -18,7 +19,13 @@ struct SampleSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                Welcome()
+                Group {
+                    if viewModel.isAuthenticated {
+                        MainTab()
+                    } else {
+                        Welcome().environmentObject(viewModel)
+                    }
+                }
             }
         }
     }

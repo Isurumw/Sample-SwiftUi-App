@@ -2,13 +2,13 @@
 //  Welcome.swift
 //  SampleSwiftUI
 //
-//  Created by Aravindi on 2021-09-01.
+//  Created by Isuru Madusanka on 2021-09-01.
 //
 
 import SwiftUI
 
 struct Welcome: View {
-    @State private var isShowDashboard = false
+    @EnvironmentObject var viewModel: BaseViewModel
     
     var body: some View {
         VStack {
@@ -22,16 +22,9 @@ struct Welcome: View {
             Text("SwiftUI helps you build great-looking apps across all Apple platforms.")
                 .foregroundColor(.Pewter)
                 .font(.H5).multilineTextAlignment(.leading)
-            NavigationLink(
-                destination: MainTab(),
-                isActive: $isShowDashboard
-            ) {
-                CustomButton(
-                    isSet: $isShowDashboard,
-                    label: "SIGN IN"
-                )
-                .padding(.top, 16)
-            }
+            CustomButton(label: "SIGN IN", action: {
+                viewModel.isAuthenticated = true
+            }).padding(.top, 16)
             Spacer()
             Text("Not an user yet?")
                 .font(.H6)
@@ -52,6 +45,6 @@ struct Welcome: View {
 
 struct Welcome_Previews: PreviewProvider {
     static var previews: some View {
-        Welcome()
+        Welcome().environmentObject(BaseViewModel())
     }
 }
